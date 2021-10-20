@@ -1,9 +1,21 @@
-function nomeDaFuncao() { 
-    // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
-    // TODO: escrever dois loops aninhados para desenhar o array bidimensional e monstar o restante da tabela no console.
-    let x = [];
-    for (let i = 0; i <= 10; i++) {
-        x[i] = [];
+function multiplyTabble(maxValue) {
+    
+    let myArray2d = []
+
+    for (let counterA = 0; counterA <= maxValue; counterA++) {
+
+        myArray2d.push(counterA)
+
+        myArray2d[counterA] = []
+
+        for (let counterB = 0; counterB <= maxValue; counterB++) {
+
+            myArray2d[counterA].push(counterA * counterB)
+
+        }
+            
     }
-    console.table(x)
+
+    console.table(myArray2d)
+        
 }
